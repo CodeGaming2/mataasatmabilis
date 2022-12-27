@@ -1,0 +1,29 @@
+local kavoUi = loadstring(game:HttpGet("https://pastebin.com/raw/vff1bQ9F"))();
+local window = kavoUi.CreateLib("Made By CodeGaming🇵🇭­","BloodTheme")
+
+---Mga Tab
+
+local Tab1 = window:NewTab("Toggle")
+local Tab1Section = Tab1:NewSection("Speed Hack")
+local Tab2 = window:NewTab("Credits")
+local Tab2Section = Tab2:NewSection("Created By: Code Gaming🇵🇭­")
+local Tab2Section = Tab2:NewSection("Credits To: xHeptc")
+local Tab2Section = Tab2:NewSection("UI Library: Kavo UI")
+
+---Mga Pipindutin
+
+Tab1Section:NewToggle("Speed Hack!", "Bibilis Takbo Mo", function(state)
+    if state then
+        game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 120
+    else
+        game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 16
+    end
+end)
+
+Tab1Section:NewToggle("High Jump", "Talon To The Moon", function(state)
+    if state then
+        game.Players.LocalPlayer.Character.Humanoid.JumpPower = 120
+    else
+        game.Players.LocalPlayer.Character.Humanoid.JumpPower = 50
+    end
+end)
