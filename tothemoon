@@ -1,5 +1,5 @@
-local kavoUi = loadstring(game:HttpGet("https://pastebin.com/raw/vff1bQ9F"))();
-local window = kavoUi.CreateLib("Made By CodeGaming🇵🇭­","BloodTheme")
+local kavoUi = loadstring(game:HttpGet("https://raw.githubusercontent.com/CodeGaming2/kavouixcg/main/ctto"))();
+local window = kavoUi.CreateLib("Made By CodeGaming🇵🇭­","GreenTheme")
 
 ---Mga Tab
 
@@ -19,6 +19,8 @@ Tab1Section:NewToggle("Speed Hack!", "Bibilis Takbo Mo", function(state)
         game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 16
     end
 end)
+
+local Tab1Section = Tab1:NewSection("High Jump")
 
 Tab1Section:NewToggle("High Jump", "Talon To The Moon", function(state)
     if state then
